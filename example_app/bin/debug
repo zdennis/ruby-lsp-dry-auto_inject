@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+
+require "prism"
+require "pry-byebug"
+require "term/ansicolor"
+
+require_relative "../../lib/ruby_lsp/dry-auto_inject"
+require_relative "../../lib/ruby_lsp/dry-auto_inject/indexer"
+
+indexer = RubyLsp::DryAutoInject::Indexer.new(Dir.pwd)
+indexer.index
+
+puts Term::ANSIColor.yellow <<~EOT
+  Entering pry-byebug debugging session.
+EOT
+
+binding.pry
+puts

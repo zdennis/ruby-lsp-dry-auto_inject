@@ -1,0 +1,11 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+# gem "rails"
+gem "prism"
+gem "pry-byebug"
+gem "dry-container"
+gem "dry-auto_inject"
+gem "term-ansicolor"
+gem "ruby-lsp-dry-auto_inject", path: "../"
