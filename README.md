@@ -6,7 +6,9 @@ It's not released or published at this time.
 
 ## Toying around
 
-See a [relative link](other_file.md)
+Quick video showing how to toy around with this in VSCode...
+
+https://github.com/zdennis/ruby-lsp-dry-auto_inject/assets/967/9bae03e6-dc63-46ca-aab0-b4a00f98505b
 
 ## Installation
 
